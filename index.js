@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-app.get('*', (req, res) => res.json({name:'Donald Duck'}));
+app.get('*', (req, res) => res.json({ id:32749873262873, name:'Donald Duck' }));
 app.post('*', (req, res) => res.sendStatus(201));
 app.put('*', (req, res) => res.sendStatus(204));
 app.delete('*', (req, res) => res.sendStatus(204));
