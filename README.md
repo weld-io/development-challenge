@@ -4,7 +4,7 @@ So happy you’re interested in working at [Weld](https://www.weld.io)!
 
 ## The Task
 
-Use a JavaScript framework of your choice and build a GUI similar to this prototype: [https://www.weld.io/namechanger/view](www.weld.io/namechanger/view)
+Use a JavaScript framework of your choice and build a GUI similar to this prototype: [www.weld.io/namechanger/view](https://www.weld.io/namechanger/view)
 
 Perform REST requests against the server `https://simple-rest-weld.herokuapp.com`, e.g. `https://simple-rest-weld.herokuapp.com/user/1`
 
