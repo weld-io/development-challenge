@@ -1,11 +1,11 @@
-# Simple REST – Development Challenge
+# Development Challenge: Simple REST Client
 
 So happy you’re interested in working at [Weld](https://www.weld.io)!
 
 ## The Task
 
 1. Pick a JavaScript framework of your choice.
-2. Build a GUI similar to this prototype: [www.weld.io/namechanger/view](https://www.weld.io/namechanger/view)
+2. Build a GUI similar to this prototype: [www.weld.io/namechanger](https://www.weld.io/namechanger)
 3. Perform REST requests against the server (see API below).
 4. Write the code in a way so someone could continue working on it later.
 5. Try to impress us!
