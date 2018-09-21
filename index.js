@@ -1,11 +1,16 @@
-const express = require('express');
-const cors = require('cors');
-const app = express();
-app.use(cors());
+const express = require('express')
+const cors = require('cors')
+const app = express()
 
-app.get('*', (req, res) => res.json({ id:32749873262873, name:'Donald Duck' }));
-app.post('*', (req, res) => res.sendStatus(201));
-app.put('*', (req, res) => res.sendStatus(204));
-app.delete('*', (req, res) => res.sendStatus(204));
+const data = require('./data')
 
-app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port ' + (process.env.PORT || 3000)));
+app.use(cors())
+
+app.get('/users/:userId', (req, res) => res.json(data[req.params.userId]))
+app.get('/users', (req, res) => res.json(data))
+app.post('*', (req, res) => res.sendStatus(201))
+app.put('*', (req, res) => res.sendStatus(204))
+app.delete('*', (req, res) => res.sendStatus(204))
+
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => console.log(`App listening on port ${PORT}`))
