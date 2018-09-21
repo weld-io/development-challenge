@@ -12,11 +12,12 @@ So happy you’re interested in working at [Weld](https://www.weld.io)!
 
 ## Server API
 
-Do requests to `https://simple-rest-weld.herokuapp.com`, e.g. `https://simple-rest-weld.herokuapp.com/user/1`
+Do requests to `https://simple-rest-weld.herokuapp.com`, e.g. `https://simple-rest-weld.herokuapp.com/users/1`
 
 The server is answering any GET, POST, PUT, DELETE requests with 20X responses:
 
-	app.get('*', (req, res) => res.json({name: 'Donald Duck'}))
-	app.post('*', (req, res) => res.sendStatus(201))
-	app.put('*', (req, res) => res.sendStatus(204))
-	app.delete('*', (req, res) => res.sendStatus(204))
+    app.get('/users/:userId', (req, res) => res.json({}))
+    app.get('/users', (req, res) => res.json([...]))
+    app.post('*', (req, res) => res.sendStatus(201))
+    app.put('*', (req, res) => res.sendStatus(204))
+    app.delete('*', (req, res) => res.sendStatus(204))
