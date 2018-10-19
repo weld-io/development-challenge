@@ -21,3 +21,5 @@ The server is answering any GET, POST, PUT, DELETE requests with 20X responses:
     app.post('*', (req, res) => res.sendStatus(201))
     app.put('*', (req, res) => res.sendStatus(204))
     app.delete('*', (req, res) => res.sendStatus(204))
+
+**NOTE:** the API is static, i.e. a POST/PUT/DELETE won’t change the data.
