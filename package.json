@@ -1,16 +1,9 @@
 {
   "name": "development-challenge",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Simple REST server for Weld development challenge.",
   "main": "index.js",
   "repository": "git@github.com:weld-io/development-challenge.git",
   "author": "Henric Malmberg",
-  "license": "MIT",
-  "dependencies": {
-    "cors": "^2.8.4",
-    "express": "^4.16.3"
-  },
-  "scripts": {
-    "start": "node index.js"
-  }
+  "license": "MIT"
 }

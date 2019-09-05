@@ -1,25 +1,27 @@
-# Development Challenge: Simple REST Client
+# Weld Development Challenge
 
 So happy you’re interested in working at [Weld](https://www.weld.io)!
 
 ## The Task
 
-1. Pick a JavaScript framework of your choice.
-2. Build a GUI similar to this prototype: [www.weld.io/namechanger](https://www.weld.io/namechanger)
-3. Perform REST requests against the server `https://simple-rest-weld.herokuapp.com` (see API below).
-4. Write the code in a way so someone could continue working on it later.
+1. The task is to build a User Admin app using React Hooks.
+2. Implement a GUI similar to this prototype: [www.weld.io/namechanger](https://www.weld.io/namechanger)
+3. Perform REST requests against the API `https://jsonplaceholder.typicode.com/users` (see API below).
 5. Try to impress us!
+  - Use React Hooks and possibly custom hooks.
+  - Preferably use a global state container (e.g. Redux).
+  - UX: make the app easy to use.
+  - Code style: write and organize your code in a way so someone could continue working on it later.
 
 ## Server API
 
-Do requests to `https://simple-rest-weld.herokuapp.com`, e.g. `https://simple-rest-weld.herokuapp.com/users/1`
+Do requests to `https://jsonplaceholder.typicode.com/users`
 
-The server is answering any GET, POST, PUT, DELETE requests with 20X responses:
+  GET	/users
+  GET	/users/1
+  POST	/users
+  PUT	/users/1
+  PATCH	/users/1
+  DELETE	/users/1
 
-    app.get('/users/:userId', (req, res) => res.json({}))
-    app.get('/users', (req, res) => res.json([...]))
-    app.post('*', (req, res) => res.sendStatus(201))
-    app.put('*', (req, res) => res.sendStatus(204))
-    app.delete('*', (req, res) => res.sendStatus(204))
-
-**NOTE:** the API is static, i.e. a POST/PUT/DELETE won’t change the data.
+More info: https://jsonplaceholder.typicode.com/
